@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: shopify_1_dev
+  host: localhost
+  pool: 5
+  username: postgres
+  password: 123456
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: shopify_1_test
+  host: localhost
+  pool: 5
+  username: postgres
+  password: 123456

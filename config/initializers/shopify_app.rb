@@ -9,4 +9,7 @@ ShopifyApp.configure do |config|
   config.after_authenticate_job = false
   config.api_version = "2019-10"
   config.session_repository = Shop
+  config.webhooks = [
+    {topic: 'carts/update', address: 'https://tech-space.herokuapp.com/webhooks/carts_update', format: 'json'},
+  ]
 end

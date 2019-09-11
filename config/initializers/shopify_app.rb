@@ -10,7 +10,6 @@ ShopifyApp.configure do |config|
   config.api_version = "2019-10"
   config.session_repository = Shop
   config.webhooks = [
-    {topic: 'app/uninstalled', address: 'https://tech-space.herokuapp.com/webhooks/app_uninstalled', format: 'json'},
-    {topic: 'carts/update', address: 'https://tech-space.herokuapp.com/webhooks/carts_update', format: 'json'},
+    {topic: 'products/update', address: 'https://tech-space.herokuapp.com/webhooks/products_update', format: 'json'},
   ]
 end
